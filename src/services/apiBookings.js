@@ -34,7 +34,7 @@ export async function getBookings({ filter, sortBy, page }) {
     throw new Error("Bookings could not be loaded");
   }
 
-  console.log(data);
+  console.log(data, count);
   return { data, count };
 }
 
